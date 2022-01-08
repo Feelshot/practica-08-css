@@ -1,3 +1,46 @@
 :root {
-    
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+.container {
+    width: 300px;
+    margin: 50px auto 50px auto;
+}
+/* ---- cuadro blanco ---- */
+.container-gray {
+    background-color: #fdfdfd;
+}
+.container-gray h1 { color: var(--Cyan); }
+.container-gray h2 { color: var(--Bright-Yellow); }
+.container-gray p  { color: var(--Grayish-Blue); }
+/* ---- cuadro azul fuerte ---- */
+.container-blue {
+    background-color: var(--Cyan);
+    color: #ebebeb;
+}
+.container-blue .button {
+    width: 100px;
+    height: 30px;
+    background-color: var(--Bright-Yellow);
+    color: #ebebeb;
+}
+/* ---- cuadro azul claro ----*/
+.container-cyan {
+    background-color: rgb(108, 187, 188);
+    color: #ebebeb;
+}
+/* ---- media desktop ---- */
+@media (min-width: 1000px) {
+
 }
