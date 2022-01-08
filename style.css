@@ -4,10 +4,7 @@
 --Light-Gray: hsl(204, 43%, 93%);
 --Grayish-Blue: hsl(218, 22%, 67%);
 }
-* {
-    margin: 0;
-    padding: 0;
-}
+* { margin: 0; padding: 0;}
 body {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
@@ -20,15 +17,44 @@ body {
 /* ---- cuadro blanco ---- */
 .container-gray {
     background-color: #fdfdfd;
+    width: 300px;
+    height: 220px;
+    padding-top: 24px;
+    border-radius: 5px 5px 0 0;
 }
-.container-gray h1 { color: var(--Cyan); }
-.container-gray h2 { color: var(--Bright-Yellow); }
-.container-gray p  { color: var(--Grayish-Blue); }
+.container-gray-margin {
+    width: 260px;
+    margin: 0 auto 0 auto;
+}
+.container-gray h1 { 
+    color: var(--Cyan); 
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.container-gray h2 { 
+    color: var(--Bright-Yellow); 
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+.container-gray p  { 
+    color: var(--Grayish-Blue); 
+    font-size: 13px;
+    line-height: 26px;
+}
+
 /* ---- cuadro azul fuerte ---- */
 .container-blue {
     background-color: var(--Cyan);
     color: #ebebeb;
+    width: 300px;
+    height: 220px;
+    padding-top: 20px;
 }
+.container-blue-margin {
+    width: 260px;
+}
+
 .container-blue .button {
     width: 100px;
     height: 30px;
@@ -37,8 +63,16 @@ body {
 }
 /* ---- cuadro azul claro ----*/
 .container-cyan {
+    padding-top: 10px;
     background-color: rgb(108, 187, 188);
     color: #ebebeb;
+    width: 300px;
+    height: 260px;
+    border-radius: 0 0 5px 5px;
+}
+.container-cyan-margin {
+    width: 260px;
+    margin: 0 0 0 0; 
 }
 /* ---- media desktop ---- */
 @media (min-width: 1000px) {
